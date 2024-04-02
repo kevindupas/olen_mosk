@@ -1,0 +1,769 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden] {
+    display: none;
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+dfn {
+    font-style: italic;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+q {
+    quotes: \201C \201D \2018 \2019;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -.5em;
+}
+
+sub {
+    bottom: -.25em;
+}
+
+img {
+    border: 0;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+button,
+input {
+    line-height: normal;
+}
+
+button,
+html input[type=button],
+/* 1 */
+input[type=reset],
+input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body,
+figure {
+    margin: 0;
+}
+
+legend,
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.visuallyHidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(00 0 0);
+    overflow: hidden;
+}
+
+/* General Styles */
+
+html {
+    font-size: 125%;
+    background-color: rgb(3, 3, 22);
+}
+
+
+.wrapper,
+.inner-wrapper {
+    margin: 0 auto;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    /* max-width: 1440px; */
+}
+
+.inner-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(3, 3, 22);
+    background: url(../assets/background-1.png);
+    /* max-width: 1450px; */
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* General Typography */
+
+p,
+li,
+span {
+    color: #fefefe;
+    font-family: 'Monda', sans-serif;
+}
+
+li {
+    font-size: 18;
+}
+
+.title-olen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#olen-text {
+    font-size: 80px;
+    width: 81%;
+    font-weight: 900;
+    color: transparent;
+    /* -webkit-background-clip: text; */
+    /* background-clip: text; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image: url(./assets/olen.png);
+    text-align: left;
+    font-family: 'Alegreya Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 25px 0px;
+    padding: 30px;
+    line-height: 60px;
+    transform: skew(-10deg) rotate(-5deg);
+}
+
+
+
+h1,
+h2 {
+    color: #fefefe;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    margin: 25px 0;
+    padding: 30px;
+    line-height: 60px;
+    letter-spacing: 2px;
+    transform: skew(-10deg);
+    transform: rotate(-5deg);
+    text-shadow: 0 0 4px #fefefe, 0 0 5px #fefefe, 0 0 7.5px #fefefe, 0 0 10px rgb(35, 73, 212), 0 0 17.5px rgb(43, 92, 226), 0 0 40px rgb(43, 116, 226), 0 0 50px rgb(43, 144, 226), 0 0 75px rgb(43, 98, 226);
+}
+
+h2 {
+    color: #fefefe;
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transform: skew(-10deg);
+    transform: rotate(-5deg);
+    transition: all 0.5s;
+}
+
+
+
+/* Game Instructions Section */
+
+.game-info {
+    width: 35%;
+    height: 100%;
+    border-right: 1px solid #fefefe;
+    background-color: rgb(3, 3, 22);
+}
+
+
+.instructions p {
+    margin: 10px 15px;
+}
+
+.score {
+    color: white;
+}
+
+.game-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.game-stats p {
+    width: 40%;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 25px;
+    border: 3px solid #fefefe;
+    background-color: #406cd5;
+}
+
+/* Sidebar Player Options */
+
+.options {
+    margin: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.options label {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding-left: 35px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.options input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.check-mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fefefe;
+}
+
+.options label:hover input~.check-mark {
+    background-color: rgb(197, 183, 211);
+}
+
+.options label input:checked~.check-mark {
+    background-color: rgb(3, 3, 22);
+
+}
+
+.check-mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.options label input:checked~.check-mark:after {
+    display: block;
+}
+
+.options label .check-mark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #fefefe;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* High Scores */
+
+.scores {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.scores span {
+    display: block;
+    cursor: pointer;
+    margin-top: 10px;
+    color: #fefefe;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+}
+
+
+
+/* Playing Area Styles */
+
+.game-content {
+    width: 65%;
+    height: 100%;
+    margin: 0 auto;
+    background: url(../assets/background-1.png);
+    background-color: rgb(3, 3, 22);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.game-area {
+    margin: 0 auto;
+    width: 95%;
+    height: 100%;
+    position: relative;
+}
+
+
+.player-instructions {
+    font-family: 'Alegreya Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fefefe;
+    width: 50%;
+    margin: 10px auto;
+    padding: 5px;
+    font-size: 25px;
+    text-align: center;
+    position: absolute;
+    bottom: 25%;
+    left: 30%;
+}
+
+.enemy {
+    position: absolute;
+    /* top: 50%; */
+    /* Positionne à 50% de la hauteur du parent */
+    left: 19%;
+    /* Positionne à 50% de la largeur du parent */
+    transform: translate(-50%, -50%);
+    /* Décale l'élément de -50% de sa propre largeur et hauteur pour un centrage parfait */
+    width: 35px;
+    /* Largeur de l'ennemi */
+    height: 60px;
+    /* Hauteur de l'ennemi */
+    background: url('../assets/new_enemy2.png') center center / cover no-repeat;
+    /* Assurez-vous que le chemin vers l'image est correct */
+}
+
+
+.player {
+    position: absolute;
+    margin-left: -20px;
+    width: 80px;
+    height: 70px;
+    background: url(../assets/player2.png) center center / cover no-repeat;
+}
+
+.laser {
+    position: absolute;
+    margin-left: -2.5px;
+    height: 40px;
+    width: 10px;
+    background: url(../assets/laser-player.png) center center / cover no-repeat;
+}
+
+.flower {
+    position: absolute;
+    margin-left: -2.5px;
+    height: 40px;
+    width: 10px;
+    background: url(../assets/flower.png) center center / cover no-repeat;
+}
+
+
+.controls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10%;
+}
+
+/* Module */
+.module,
+.high-scores-module {
+    background-color: rgb(3, 3, 22);
+    margin: 0 auto;
+    width: 80%;
+    height: 90vh;
+    position: absolute;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 25px;
+    border: 3px solid #fefefe;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.results {
+    width: 50%;
+    height: 100%;
+
+}
+
+.highScores {
+    width: 50%;
+    height: 100%;
+    border-right: 3px solid #fefefe;
+}
+
+.high-scores-module {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.leader-boards {
+    width: 80%;
+    height: 100%;
+    overflow: auto;
+}
+
+.highScores li {
+    font-size: 18px;
+    line-height: 1.1;
+    padding: 0;
+    margin: 0;
+}
+
+.highScores ol {
+    margin: 0 auto;
+    width: 75%;
+    display: block;
+}
+
+.high-scores-module span {
+    display: block;
+    cursor: pointer;
+    color: #fefefe;
+    font-size: 75px;
+    padding: 15px;
+    line-height: 0;
+    width: 100%;
+    text-align: right;
+    margin-top: 25px;
+}
+
+.high-scores-module span:hover {
+    color: rgb(45, 14, 75);
+}
+
+.results p {
+    font-size: 20px;
+}
+
+form {
+    width: 100%;
+}
+
+button {
+    font-family: 'Alegreya Sans', sans-serif;
+    text-transform: uppercase;
+    background-color: #406cd5;
+    color: #fefefe;
+    border: 3px solid #fefefe;
+    border-radius: 25px;
+    padding: 10px 15px;
+    margin-top: 10%;
+}
+
+input[type="text"]::placeholder,
+legend,
+label,
+input[type="submit"] {
+    color: #fefefe;
+    font-family: 'Monda', sans-serif;
+}
+
+legend {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="submit"] {
+    background-color: #406cd5;
+    color: #fefefe;
+    border: 2px solid #fefefe;
+    /* border-radius: 25px; */
+    margin: 0;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 10px 15px;
+}
+
+input[type="submit"] {
+    width: 30%;
+    padding: 4px 0;
+    transition: background 0.5s ease;
+}
+
+input[type="submit"]:hover,
+input[type="text"]:focus,
+input[type="text"]:active,
+button:hover {
+    background-color: rgb(45, 14, 75);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .game-stats p {
+        padding: 5px;
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .module {
+        flex-direction: column-reverse;
+    }
+
+    .module h2 {
+        font-size: 40px;
+        margin: 15px;
+        padding: 0;
+        line-height: 1.2;
+    }
+
+    .results,
+    .highScores {
+        width: 100%;
+    }
+
+    .highScores {
+        margin-top: 10px;
+        border-right: none;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+    h1 {
+        transform: rotate(0deg);
+        padding: 10px;
+        margin: 10px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    header {
+        flex-direction: column;
+        height: 180vh;
+    }
+
+    .game-info {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .game-area {
+        overflow: visible;
+    }
+
+    .game-content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .game-stats p {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    input[type="text"],
+    input[type="submit"] {
+        width: 100%;
+        padding: 5px 8px;
+    }
+
+    input[type="submit"] {
+        margin-top: 5px;
+        padding: 5px;
+    }
+
+    input[type="text"]::placeholder {
+        text-align: center;
+    }
+
+    .module .highScores {
+        display: none;
+    }
+
+}
